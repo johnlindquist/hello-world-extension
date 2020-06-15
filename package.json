@@ -1,0 +1,29 @@
+{
+  "name": "hello-world-extension",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./out/extension.js",
+  "scripts": {
+    "watch": "tsc -watch -p ./",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/vscode": "^1.46.0",
+    "typescript": "^3.9.5"
+  },
+  "engines": {
+    "vscode": "^1.22.0"
+  },
+  "activationEvents": [
+    "onCommand:eggheadio.helloWorld"
+  ],
+  "contributes": {
+    "commands": {
+      "command": "eggheadio.helloWorld",
+      "title": "Say hello world"
+    }
+  }
+}
